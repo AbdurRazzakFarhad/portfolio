@@ -1,0 +1,137 @@
+@media only screen and (max-width: 1079px) {
+    .about-container .grid-about-item-left {
+        width: 50%;
+    }
+    .about-container .grid-about-item-right {
+        width: 50%;
+    }
+    .hero-text-box h6 {
+        font-size: 4.8rem;
+    }
+    .hero-text-box h3 {
+        font-size: 2.5rem;
+    }
+    .selector .ah-headline span {
+        font-size: 2.5rem;
+    }
+    .selector .ah-headline b {
+        font-size: 2.5rem;
+    }
+    .process-container .design {
+        width: 49%;
+        margin-bottom: .8rem;
+    }
+    .process-container .development {
+        background: #835aeb;
+        width: 49%;
+        margin-bottom: .8rem;
+    }
+    .process-container .testing {
+        background: #002453;
+        width: 49%;
+        margin-bottom: .8rem;
+    }
+    .process-container .launch {
+        background: #ff2b4a;
+        width: 49%;
+        margin-bottom: .8rem;
+    }
+    .work-grid-cntainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* .testi-container {
+        margin-top: 2rem;
+    } */
+}
+
+@media only screen and (max-width: 887px) {
+    .hero-text-box h6 {
+        font-size: 4rem;
+    }
+    .hero-text-box h3 {
+        font-size: 2.2rem;
+    }
+    .selector .ah-headline span {
+        font-size: 2.2rem;
+    }
+    .selector .ah-headline b {
+        font-size: 2.2rem;
+    }
+    .contact-container .left {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .contact-container .right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hero-text-box {
+        width: 38rem;
+        height: 16rem;
+    }
+    .about-container .grid-about-item-left {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+    .about-container .grid-about-item-left img {
+        width: 80%;
+    }
+    .about-container .grid-about-item-right {
+        width: 100%;
+    }
+    .bio-container .left {
+        width: 100%;
+        margin-bottom: 5rem;
+    }
+    .bio-container .right {
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .process-container .design {
+        width: 100%;
+        margin-bottom: .8rem;
+    }
+    .process-container .development {
+        background: #835aeb;
+        width: 100%;
+        margin-bottom: .8rem;
+    }
+    .process-container .testing {
+        background: #002453;
+        width: 100%;
+        margin-bottom: .8rem;
+    }
+    .process-container .launch {
+        background: #ff2b4a;
+        width: 100%;
+        margin-bottom: .8rem;
+    }
+    .testi-container p {
+        margin: 2rem 0;
+    }
+    .work-grid-cntainer {
+        grid-template-columns: auto;
+        grid-auto-rows: 100%;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    .hero-text-box h6 {
+        font-size: 3.8rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .hero-text-box h6 {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+}

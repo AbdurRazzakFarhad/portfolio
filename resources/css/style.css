@@ -1,0 +1,626 @@
+/* ======================================
+
+Template Name: Paul Lapkin
+Template URI: https://moshiur.dev/projects/paul-lapkin/
+Author: Moshiur
+Author URI: https://moshiur.me
+Version: 1.0
+Description: An awesome personal portolio template.
+Support: moshiur@codersfoundation.com
+
+========================================*/
+
+/* ======================================
+
+CSS INDEX
+---------
+1. Google Fonts
+2. Common CSS
+
+========================================*/
+
+/* 1. Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@200;400;700&display=swap');
+/* 2. Common CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    color: #000;
+    background: #fff;
+    font-size: 62.5%;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Raleway', sans-serif;
+}
+
+a:link, a:hover {
+    text-decoration: none;
+}
+
+section {
+    padding: 12rem 0;
+}
+
+.section-title {
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-title span {
+    font-size: 1.6rem;
+    color: #6f6f6f;
+}
+
+.max-width {
+    max-width: 120rem;
+    padding: 0 2rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* HEADER SECTION START */
+/* HEADER SECTION START */
+
+#hero {
+    /* background-color: #10273a; */
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/clint-patterson-dYEuFB8KQJk-unsplash.jpg) no-repeat center bottom / cover;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#hero .particles-js-canvas-el {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.uk-sticky-fixed {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.uk-sticky-fixed {
+    padding: 2rem 0;
+}
+
+.uk-sticky-fixed {
+    padding: 2rem 4rem;
+}
+
+nav {
+    position: relative;
+    padding: 4rem;
+}
+
+.logo img {
+    font-size: 3.5rem;
+}
+
+/* .menu-icon{
+    padding: 2rem 0;
+}
+.logo {
+    padding: 2rem 0;
+} */
+
+.menu-icon i {
+    font-size: 3.5rem;
+    color: white;
+    border: 1px solid white;
+    padding: .6rem;
+}
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.ah-headline.clip .ah-words-wrapper::after {
+    display: none;
+}
+
+.hero-text-box h6 {
+    font-weight: 700;
+    font-size: 6rem;
+    color: #fff;
+    margin-top: 1.5rem;
+    margin-bottom: 1.3rem;
+}
+
+.selector .ah-headline span {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.selector .ah-headline b {
+    /* font-family: cursive; */
+    margin-left: .5rem;
+    font-weight: bold;
+    color: yellow;
+    text-transform: uppercase;
+}
+
+.hero-text-box h3 {
+    font-weight: 400;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.hero-text-box span {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.next-section a {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -13rem;
+}
+
+.next-section a .fas {
+    padding: 12px;
+    font-size: 22px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #fff;
+    border: 2px solid white;
+}
+
+.next-section {
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+    50% {
+        transform: translate(0, 25px);
+    }
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+/* MENU OPEN AND COLOSE */
+
+/* MENU OPEN AND COLOSE */
+
+.menu-container {
+    background: rgba(0, 0, 0, 0.95);
+    width: 0%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999;
+    overflow: hidden;
+}
+
+.close-btn a {
+    position: absolute;
+    top: 4rem;
+    padding: 0 1rem;
+    right: 7.5rem;
+    color: #fff;
+    font-size: 3rem;
+    border: 1px solid #fff;
+}
+
+.menu-items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu-items ul {
+    text-align: center;
+    padding-left: 0;
+}
+
+.menu-items ul li {
+    list-style-type: none;
+}
+
+.menu-items ul li:hover a {
+    font-size: 3.2rem;
+    color: crimson;
+}
+
+.menu-items ul li a {
+    display: inline-block;
+    color: #fff;
+    font-size: 2.8rem;
+    margin: .6rem 0;
+    transition: .3s;
+}
+
+/* ABOUT SECTION START */
+
+/* ABOUT SECTION START */
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-container .grid-about-item-left {
+    width: 40%;
+}
+
+.about-container .grid-about-item-right {
+    width: 60%;
+}
+
+.paul {
+    width: 80%;
+    clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.about-container .grid-about-item-right h4 {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.about-container .grid-about-item-right p {
+    font-size: 1.6rem;
+}
+
+.about-description {
+    margin: 3rem 0;
+}
+
+.btn {
+    display: inline-block;
+    width: 200px;
+    background: #ff2b4a;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 8px 30px;
+    text-align: center;
+    border: 2px solid #ff2b4a;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #ff2b4a;
+}
+
+/* PROCESS SECTION START */
+
+/* PROCESS SECTION START */
+
+#process {
+    background: #f6f6f6;
+}
+
+.process-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.process-container .common-design {
+    text-align: center;
+    width: 24%;
+    padding: 9rem;
+}
+
+.process-container .common-design .fas {
+    font-size: 4rem;
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.process-container .common-design h4 {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.process-container .design {
+    background: #10c6fc;
+    width: 24%;
+}
+
+.process-container .development {
+    background: #835aeb;
+    width: 24%;
+}
+
+.process-container .testing {
+    background: #002453;
+    width: 24%;
+}
+
+.process-container .launch {
+    background: #ff2b4a;
+    width: 24%;
+}
+
+/* BIO SECTION START */
+
+/* BIO SECTION START */
+
+#bio {
+    background: url(../img/experience.jpg) no-repeat center top/cover;
+    background-attachment: fixed;
+}
+
+.bio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bio-container .left {
+    padding: 3rem;
+    width: 49.5%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.bio-container .right {
+    padding: 3rem;
+    width: 49.5%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.bio-container h3 {
+    font-weight: 700;
+    font-size: 3.3rem;
+    color: #fff;
+}
+
+.bio-container h4 {
+    margin: 3.3rem 0 3rem 0;
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.bio-container span {
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+.bio-container hr {
+    color: #fff;
+    margin: 3rem 0;
+}
+
+/* WORK SECTION START */
+
+/* WORK SECTION START */
+
+.work-grid-cntainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: 28rem;
+}
+
+.work-grid-item:nth-child(5) {
+    grid-column: 1/3;
+}
+
+.work-grid-item img {
+    width: 100%;
+    height: 100%;
+}
+
+/* TESTIMONIAL SECTION START */
+
+/* TESTIMONIAL SECTION START */
+
+#testimonial {
+    background: url(../img/testimonial.jpg) no-repeat center top / cover;
+}
+
+.testi-container p {
+    font-size: 1.6rem;
+    max-width: 58%;
+    margin: 4rem 0 5rem 0;
+}
+
+/* .testi-container {
+    margin-top: 3rem;
+} */
+
+.testi-container h4 {
+    font-size: 1.8rem;
+    color: #333333;
+    margin: 2rem 0 2rem 0;
+    font-weight: 700;
+}
+
+.testi-container span {
+    font-size: 1.5rem;
+}
+
+/* CONTTACT SECTION START */
+
+/* CONTTACT SECTION START */
+
+#contact {
+    background: url(../img/contact.jpg) no-repeat center top / cover;
+    background-attachment: fixed;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-container .left {
+    height: 63rem;
+    overflow: hidden;
+    padding: 3rem;
+    width: 49.5%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.contact-container .left form {
+    margin: 6rem 0 5rem 0;
+}
+
+.contact-container .left input {
+    color: #fff;
+    display: block;
+    margin-top: 1.5rem;
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.contact-container .left input:first-child {
+    margin-top: 0;
+}
+
+.contact-container .left textarea {
+    margin-top: 1.5rem;
+    display: block;
+    background: transparent;
+    width: 100%;
+    color: #fff;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.contact-container .left h3 {
+    font-size: 3.3rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.contact-container .right h3 {
+    font-size: 3.3rem;
+    color: #fff;
+    font-weight: 700;
+}
+
+.contact-container .left .btn {
+    display: inline-block;
+    width: 200px;
+    background: #ff2b4a;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 8px 30px;
+    text-align: center;
+    border: 2px solid #ff2b4a;
+    transition: .3s;
+    cursor: pointer;
+    /* position: relative;
+    right: -30.5rem; */
+}
+
+.contact-container .btn:hover {
+    background: white;
+    color: #ff2b4a;
+}
+
+.contact-container .right p {
+    margin-top: 3.6rem;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.contact-container .right {
+    width: 49.5%;
+    height: 63rem;
+    overflow: hidden;
+}
+
+.contact-container .right .nest-1, .nest-2, .nest-3 {
+    background: rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+    padding: 3.1rem;
+}
+
+.contact-container .right .nest-3 {
+    margin-bottom: 0;
+}
+
+/* FOOTER SECTION START */
+
+/* FOOTER SECTION START */
+
+footer {
+    padding: 5rem 0;
+    background: #222222;
+}
+
+.footer-container {
+    text-align: center;
+}
+
+.footer-container .fab {
+    color: #fff;
+    font-size: 2rem;
+    border-right: 1px solid #fff;
+    padding: 0 1rem;
+    transition: .3s;
+}
+
+.footer-container .fab:hover {
+    color: crimson;
+}
+
+.footer-container .copyright {
+    color: #fff;
+    font-size: 1.4rem;
+    margin: 2rem 0;
+}
+
+.footer-container .copyright span {
+    color: crimson;
+}
+
+.footer-container .scroll-up .fas {
+    font-size: 1.5rem;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: .6rem .9rem;
+}
